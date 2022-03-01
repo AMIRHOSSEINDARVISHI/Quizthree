@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:layout_editor_absoluteX="97dp"
+    tools:layout_editor_absoluteY="33dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="نام"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edittextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutFamily"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="نام خانوادگی"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edittextFamily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutNationalCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="شماره ملی"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutFamily">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edittextNationalCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSend"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutNationalCode">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/checkboxCoding"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Coding"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/checkboxFootbal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Footbal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkboxCoding" />
+
+            <CheckBox
+                android:id="@+id/checkboxSwimming"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Swimming"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkboxFootbal" />
+
+            <CheckBox
+                android:id="@+id/checkboxMovie"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:text="Movie"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkboxSwimming" />
+
+            <CheckBox
+                android:id="@+id/checkboxFencing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Fencing"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkboxMovie" />
+
+            <CheckBox
+                android:id="@+id/checkboxFortnite"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Fortnite"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkboxFencing" />
+
+            <CheckBox
+                android:id="@+id/checkboxDigitalGames"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Digital games"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkboxFortnite" />
+
+            <CheckBox
+                android:id="@+id/checkboxCooking"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Cooking"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkboxDigitalGames" />
+
+            <CheckBox
+                android:id="@+id/checkboxPuzzles"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Puzzles"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkboxCooking" />
+
+            <CheckBox
+                android:id="@+id/checkboxFishind"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Fishind"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkboxPuzzles" />
+
+            <CheckBox
+                android:id="@+id/checkboxHiking"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Hiking"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkboxFishind" />
+
+            <CheckBox
+                android:id="@+id/checkboxDrawing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Drawing"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkboxHiking" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonSend"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="ثبت نام"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

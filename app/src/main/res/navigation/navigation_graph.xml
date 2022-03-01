@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/profileFragment">
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="code.with.cal.quizthree.ProfileFragment"
+        android:label="ProfileFragment" >
+        <action
+            android:id="@+id/action_profileFragment_to_uploadImageFragment"
+            app:destination="@id/uploadImageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="code.with.cal.quizthree.ListFragment"
+        android:label="SearchFragment" />
+    <fragment
+        android:id="@+id/uploadImageFragment"
+        android:name="code.with.cal.quizthree.UploadImageFragment"
+        android:label="UploadImageFragment" >
+        <argument
+            android:name="token"
+            app:argType="string" />
+    </fragment>
+</navigation>
